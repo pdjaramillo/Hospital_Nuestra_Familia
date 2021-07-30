@@ -1,0 +1,52 @@
+@extends('layouts.app')
+
+@section('content')
+    <div class="container text-center text-primary rounded">
+        <h1>Bienvenido</h1>
+        <h3>Agenda de Citas</h3>
+    </div>
+
+    <hr>
+
+    <div class="container col mb-5">
+        <div id='agenda'></div>
+    </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="calendarModal" tabindex="-1" role="dialog" aria-labelledby="calendarModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="calendarModalLabel">Cita para:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="">
+              <div class="form-group">
+                  <label for="title">Paciente</label>
+                  <input id="title" class="form-control" type="text" name="title">
+              </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          {{-- <button type="button" class="btn btn-primary">Guardar</button> --}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <!-- Referencias a fullcalendar -->
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.7.2/main.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.7.2/main.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.7.2/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.7.2/locales-all.js"></script>
+
+        <!-- Script de Fullcalendar -->
+
+        <script src="{{ asset('js/agenda.js') }}"></script>
+
+@endsection
