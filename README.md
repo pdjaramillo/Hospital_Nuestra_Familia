@@ -139,7 +139,7 @@ Correr el servidor de laravel
     
 ## Apendice
 
-El proyecto vieve cargado con información báse para realizar pruebas
+El proyecto viene por defecto cargado con información báse para realizar pruebas
 
 ````bash
 Administrador
