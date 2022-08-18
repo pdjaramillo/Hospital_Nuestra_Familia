@@ -143,19 +143,19 @@ El proyecto viene por defecto cargado con información báse para realizar prueb
 
 ````bash
 Administrador
-usuario: p_jaramillo20@hotmail.com
+usuario: admin@hotmail.com
 clave: admin
 ````
 
 ````bash
 Cliente
-usuario: jamil.jaramillo@hotmail.com
+usuario: cliente@hotmail.com
 clave: cliente
 ````
 
 ````bash
 Médico
-usuario: p_jaramillo20@hotmail.com
+usuario: medico@hotmail.com
 clave: medico
 ````
 ## Notas adicionales
