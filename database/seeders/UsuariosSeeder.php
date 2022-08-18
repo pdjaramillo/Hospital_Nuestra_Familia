@@ -15,12 +15,12 @@ class UsuariosSeeder extends Seeder
     public function run()
     {
         $userAdmin=User::create([
-            'name' => 'Pablo Daniel',
-            'apellido' => 'Jaramillo Fierro',
-            'cedula' => '1104251473',
-            'email' => 'p_jaramillo20@hotmail.com',
-            'telefono' => '0995699428',
-            'direccion' => 'Miguel Riofrio y Bolivar',
+            'name' => 'Pablo',
+            'apellido' => 'Jaramillo',
+            'cedula' => '1100000001',
+            'email' => 'admin@hotmail.com',
+            'telefono' => '0990000001',
+            'direccion' => 'Miguel Riofrio',
             'fechaNacimiento' => '1985-06-20',
             'password' => Hash::make('admin'),
             'rol_id' => 1,
@@ -29,8 +29,8 @@ class UsuariosSeeder extends Seeder
          ])->assignRole('Administrador');
 
         //  $userAdmin=User::create([
-        //     'name' => 'Alba',
-        //     'apellido' => 'Mogrovejo',
+        //     'name' => 'Luisa',
+        //     'apellido' => 'Jaramillo',
         //     'cedula' => '4444444444',
         //     'email' => 'alba@hotmail.com',
         //     'telefono' => '4567894566',
@@ -43,11 +43,11 @@ class UsuariosSeeder extends Seeder
         //  ])->assignRole('Medico');
 
          $useCliente=User::create([
-             'name' => 'Jamil Eduardo',
-             'apellido' => 'Jaramillo Fierro',
-             'cedula' => '1103586150',
-             'email' => 'jamil.jaramillo@hotmail.com',
-             'telefono' => '099556035',
+             'name' => 'Kevin',
+             'apellido' => 'Jaramillo',
+             'cedula' => '110000002',
+             'email' => 'cliente@hotmail.com',
+             'telefono' => '0900000005',
              'direccion' => 'Los Rosales',
              'fechaNacimiento' => '1979-12-19',
              'password' => Hash::make('cliente'),
@@ -57,12 +57,12 @@ class UsuariosSeeder extends Seeder
          ])->assignRole('Cliente');
 
          $userMedico=User::create([
-             'name' => 'Ximena Veronica',
-             'apellido' => 'Jaramillo Fierro',
-             'cedula' => '1104251231',
-             'email' => 'xv_jaramillo@hotmail.com',
-             'telefono' => '2582558',
-             'direccion' => 'Manuel Zambrano',
+             'name' => 'Diana',
+             'apellido' => 'Jaramillo',
+             'cedula' => '1100000003',
+             'email' => 'medico@hotmail.com',
+             'telefono' => '0987654125',
+             'direccion' => 'Miguel Riofrio',
              'fechaNacimiento' => '1981-10-09',
              'password' => Hash::make('medico'),
              'rol_id' => 3,
