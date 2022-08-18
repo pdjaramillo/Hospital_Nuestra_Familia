@@ -28,20 +28,6 @@ class UsuariosSeeder extends Seeder
             'genero_id' => 1,
          ])->assignRole('Administrador');
 
-        //  $userAdmin=User::create([
-        //     'name' => 'Luisa',
-        //     'apellido' => 'Jaramillo',
-        //     'cedula' => '4444444444',
-        //     'email' => 'alba@hotmail.com',
-        //     'telefono' => '4567894566',
-        //     'direccion' => 'Miguel Riofrio',
-        //     'fechaNacimiento' => '1981-06-20',
-        //     'password' => Hash::make('medico'),
-        //     'rol_id' => 3,
-        //     'ciudad_id' => 1,
-        //     'genero_id' => 1,
-        //  ])->assignRole('Medico');
-
          $useCliente=User::create([
              'name' => 'Kevin',
              'apellido' => 'Jaramillo',
